@@ -27,14 +27,16 @@ const Card = () => {
   ];
 
   return (
-    <div className="flex gap-4 p-4 ">
+    <div className="grid grid-cols-1 md:grid-cols-3  gap-4">
       {stats.map((stat, index) => (
         <div
           key={index}
-          className="card bg-base-200 w-96 shadow-md rounded-xl p-8 flex flex-col  gap-4"
+          className="card bg-base-200 w-full shadow-md rounded-xl p-6 flex flex-col gap-4"
         >
-          <div className="icon bg-base-300 rounded-full w-6 h-6 ">{stat.icon}</div>
-          <div className="flex flex-col text-left">
+          <div className="icon bg-base-300 rounded-full w-10 h-10 flex items-center justify-center">
+            {stat.icon}
+          </div>
+          <div className="text-left">
             <h3 className="text-sm font-semibold text-gray-500">
               {stat.title}
             </h3>
