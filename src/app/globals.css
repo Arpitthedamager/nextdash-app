@@ -1,3 +1,7 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 :root{
   --bg: #151c2c;
   --bgSoft: #182237;
@@ -14,9 +18,4 @@
 body{
   background-color: var(--bg);
   color: var(--text) ;
-}
-
-a{
-  color: inherit;
-  text-decoration: none;
 }
